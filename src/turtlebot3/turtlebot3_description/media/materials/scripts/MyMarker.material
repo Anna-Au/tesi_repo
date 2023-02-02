@@ -1,0 +1,15 @@
+material MyMarker
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture mymarker.png
+				scale 1 1
+			}
+		}
+	}
+}
+

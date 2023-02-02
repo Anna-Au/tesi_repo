@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<launch>
+
+
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+
+  <!---->
+  <env name="GAZEBO_MODEL_PATH" value="$(find warehouse_scenario)/models:$(optenv GAZEBO_MODEL_PATH)" />
+
+  <!-- We resume the logic in empty_world.launch -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find warehouse_scenario)/worlds/warehouse.world"/>
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+
+<!--
+  <rosparam file="$(find fratomo_pro_description)/conf/fratomo_controller.yaml" command="load"/>
+  
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/fratomo" args="joint_state_controller 
+      joint1_position_controller
+      joint2_position_controller
+      joint3_position_controller
+      joint4_position_controller
+      joint5_position_controller
+      joint6_position_controller
+      joint7_position_controller
+      joint8_position_controller
+      joint9_position_controller
+      joint10_position_controller" />
+
+
+  <param name="fratomo_robot_description" command="$(find xacro)/xacro '$(find fratomo_pro_description)/urdf/fratomo.xacro'" /> 
+
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+  args="-urdf -model fratomo -param fratomo_robot_description "/> 
+
+  <node name="fratomo_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+    <remap from="robot_description" to="fratomo_robot_description" />
+    <remap from="joint_states" to="fratomo/joint_states" />
+  </node> 
+  \-->
+
+  <!-- MOBILE ROBOT -->  
+  <param name="mobile_robot_description" command="$(find xacro)/xacro '$(find fratomo_pro_description)/urdf/fratomo_base.xacro'" /> 
+
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+  args="-urdf -model fratomo_base -param mobile_robot_description"/> 
+
+   <node name="agv_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+    <remap from="robot_description" to="mobile_robot_description" />
+    <remap from="joint_states" to="fratomo/joint_states" />
+  </node> 
+
+  <!-- GUI Controls 
+  <node pkg="rqt_robot_steering" type="rqt_robot_steering"  name="Pilot" /> -->
+
+   <!-- JOYSTICK Controls
+  <node respawn="true" pkg="joy" type="joy_node" name="my_joy" >
+  <param name="dev" type="string" value="/dev/input/js0" />
+  <param name="deadzone" value="0.06" />
+  </node>-->
+  <!-- Joy Axes 
+  <param name="axis_linear" value="4" type="int"/>
+  <param name="axis_angular" value="3" type="int"/>
+  <param name="scale_linear" value="0.8" type="double"/>
+  <param name="scale_angular" value="3.5" type="double"/>
+  <node pkg="robot_teleop" type="myJoyTeleop" name="Pilot_joy">
+    <remap from="/robot_base/cmd_vel" to="/cmd_vel"/>
+  </node>-->
+
+  <!-- RVIZ  -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find warehouse_scenario)/conf.rviz" required="true" />
+
+
+  <!-- INDUSTRIAL MANIPULATOR -->
+  <rosparam file="$(find kuka_iiwa_support)/conf/kuka_iiwa_controller.yaml" command="load"/>
+  
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/kuka_iiwa" args="joint_state_controller joint1_position_controller
+  joint2_position_controller
+  joint3_position_controller
+  joint4_position_controller
+  joint5_position_controller
+  joint6_position_controller
+  joint7_position_controller"/>
+
+  
+  <param name="robot_description" command="$(find xacro)/xacro '$(find kuka_iiwa_support)/urdf/kuka_iiwa_ctrl_camera.xacro'" />
+  <node name="urdf_spawner_2" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model iiwa -param robot_description -x 4.010 -y 3.830"/>
+  <node pkg="tf" type="static_transform_publisher" name="iiwa_base_tf" args="4.010 3.830 0 0 0 0 /map /world 1"/> 
+  <node name="iiwa_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+    <remap from="robot_description" to="robot_description" />
+    <remap from="joint_states" to="kuka_iiwa/joint_states" />
+  </node>
+  <!-- set kinect plugin log level less verbose-->
+  <node pkg="rosservice" type="rosservice" name="set_kinect_log_level" args="call --wait /gazebo/set_logger_level 'ros.gazebo_plugins.openni_kinect' 'info'" />
+
+</launch>

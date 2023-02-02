@@ -1,0 +1,14 @@
+material race/Diffuse
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+			texture race.png
+			scale 0.5 0.5	
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+prefix=/home/anna_au/tesi_ws/devel
+
+Name: warehouse_scenario
+Description: Description of warehouse_scenario
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
