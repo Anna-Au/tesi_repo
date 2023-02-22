@@ -67,14 +67,14 @@ set(marker_correction_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(marker_correction_SOURCE_PREFIX /home/anna_au/tesi_ws/src/marker_correction)
-  set(marker_correction_DEVEL_PREFIX /home/anna_au/tesi_ws/devel)
+  set(marker_correction_SOURCE_PREFIX /home/rosario/Desktop/tesi/tesi_repo/src/marker_correction)
+  set(marker_correction_DEVEL_PREFIX /home/rosario/Desktop/tesi/tesi_repo/devel/.private/marker_correction)
   set(marker_correction_INSTALL_PREFIX "")
   set(marker_correction_PREFIX ${marker_correction_DEVEL_PREFIX})
 else()
   set(marker_correction_SOURCE_PREFIX "")
   set(marker_correction_DEVEL_PREFIX "")
-  set(marker_correction_INSTALL_PREFIX /home/anna_au/tesi_ws/install)
+  set(marker_correction_INSTALL_PREFIX /home/rosario/Desktop/tesi/tesi_repo/install)
   set(marker_correction_PREFIX ${marker_correction_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(marker_correction_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "include " STREQUAL " ")
+if(NOT " " STREQUAL " ")
   set(marker_correction_INCLUDE_DIRS "")
-  set(_include_dirs "include")
+  set(_include_dirs "")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/anna_au/tesi_ws/install/lib;/home/anna_au/tesi_ws/devel/lib;/home/anna_au/Scrivania/project_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/rosario/Desktop/tesi/tesi_repo/install/lib;/home/rosario/Desktop/tesi/tesi_repo/devel/lib;/home/rosario/RL-Project-master/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

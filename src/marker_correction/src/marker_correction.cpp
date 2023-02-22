@@ -18,10 +18,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <mutex>
+#include <limits>
 
 
 typedef struct{
 	int id;
+	int num;
  	tf::Vector3 pos;
  	tf::Transform marker2map;
 
@@ -31,6 +33,7 @@ std::vector<obs_marker> marker_table;
 
 std::mutex m_table_mutex;
 
+int number=1;
 
 
 void map_callback(const aruco_msgs::MarkerArray::ConstPtr& marker_msg){
@@ -48,27 +51,36 @@ void map_callback(const aruco_msgs::MarkerArray::ConstPtr& marker_msg){
 		tf::Vector3 marker_pos=tf::Vector3(marker.pose.pose.position.x, marker.pose.pose.position.y,marker.pose.pose.position.z);
 		tf::Quaternion marker_rot=tf::Quaternion(marker.pose.pose.orientation.x,marker.pose.pose.orientation.y,marker.pose.pose.orientation.z,marker.pose.pose.orientation.w);
 		
+		double min_distance = std::numeric_limits<double>::infinity();
+		std::vector<obs_marker>::iterator min_dist_it;
 		
+		//search the element in the table that minimizes the distance
 		for(auto it2 = marker_table.begin(); it2 != marker_table.end(); ++it2){
 			std::cout<<"Distance : " << marker_pos.distance((*it2).pos) <<std::endl;
-			if (marker_pos.distance((*it2).pos)<0.005){
+			if (marker_pos.distance((*it2).pos)<min_distance && marker.id == (*it2).id){
 			//check if the marker is already present, otherwise add it to the table 
 				
-				present=true;
-				(*it2).pos=marker_pos;
-				tf::Transform new_transform;
-				new_transform.setOrigin(marker_pos);
-	  			new_transform.setRotation(marker_rot);
-	  			(*it2).marker2map=new_transform;
-				break;
+				min_distance=marker_pos.distance((*it2).pos);
+				min_dist_it=it2;
 			} 
 		}
 	
-		if(!present){
+	
+		if(min_distance<2){
+			
+			(*min_dist_it).pos=marker_pos;
+			tf::Transform new_transform;
+			new_transform.setOrigin(marker_pos);
+  			new_transform.setRotation(marker_rot);
+  			(*min_dist_it).marker2map=new_transform;
+			}
+		else{
 		std::cout<<"adding marker2map transform to table"<<std::endl;
 		obs_marker new_marker;
 		new_marker.pos=marker_pos;
 		new_marker.id=marker.id;
+		new_marker.num=number;
+		number=number+1;
 		tf::Transform new_transform;
 		new_transform.setOrigin(marker_pos);
 	  	new_transform.setRotation(marker_rot);
@@ -169,8 +181,8 @@ int main (int argc, char** argv){
 		
 		m_table_mutex.lock();
 		for(auto it2 = marker_table.begin(); it2 != marker_table.end(); ++it2){
-			std::string str="/";
-	  		str += std::to_string((*it2).id);
+			std::string str="/marker_";
+	  		str += std::to_string((*it2).num);
 			
 			br.sendTransform(tf::StampedTransform((*it2).marker2map,ros::Time::now(),"/map",str));
 			std::cout<<"Publishing transform from: /map to: "<< str << std::endl;

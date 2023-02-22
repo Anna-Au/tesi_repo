@@ -23,9 +23,9 @@
         </geometry>
         <material>
           <script>
-	    <uri>model://marker60_8cm/material/scripts</uri>
-	    <uri>model://marker60_8cm/material/textures</uri>
-            <name>Aruco/marker60_8cm</name>
+	    <uri>model://marker100_8cm/material/scripts</uri>
+	    <uri>model://marker100_8cm/material/textures</uri>
+            <name>Aruco/marker100_8cm</name>
           </script>
         </material>
       </visual>

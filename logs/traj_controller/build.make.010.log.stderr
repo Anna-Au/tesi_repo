@@ -1,0 +1,53 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:91:[m[K [01;31m[Kerror: [m[Kcannot call constructor ‘[01m[Kcostmap_2d::Costmap2DROS::Costmap2DROS[m[K’ directly [[01;31m[K-fpermissive[m[K]
+   28 |  costmap_2d::Costmap2DROS costmap= costmap_2d::Costmap2DROS::Costmap2DROS("my_costmap", tf[01;31m[K)[m[K;
+      |                                                                                           [01;31m[K^[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:91:[m[K [01;36m[Knote: [m[Kfor a function-style cast, remove the redundant ‘[01m[K::Costmap2DROS[m[K’
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:91:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kcostmap_2d::Costmap2DROS::Costmap2DROS(const costmap_2d::Costmap2DROS&)[m[K’
+In file included from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/costmap_2d/costmap_2d_ros.h:74:7:[m[K [01;36m[Knote: [m[K‘[01m[Kcostmap_2d::Costmap2DROS::Costmap2DROS(const costmap_2d::Costmap2DROS&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   74 | class [01;36m[KCostmap2DROS[m[K
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/costmap_2d/costmap_2d_ros.h:74:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kpluginlib::ClassLoader<costmap_2d::Layer>::ClassLoader(const pluginlib::ClassLoader<costmap_2d::Layer>&)[m[K’
+In file included from [01m[K/opt/ros/noetic/include/costmap_2d/costmap_2d_ros.h:50[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/pluginlib/class_loader.hpp:61:7:[m[K [01;36m[Knote: [m[K‘[01m[Kpluginlib::ClassLoader<costmap_2d::Layer>::ClassLoader(const pluginlib::ClassLoader<costmap_2d::Layer>&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   61 | class [01;36m[KClassLoader[m[K : public ClassLoaderBase
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/pluginlib/class_loader.hpp:61:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kclass_loader::MultiLibraryClassLoader::MultiLibraryClassLoader(const class_loader::MultiLibraryClassLoader&)[m[K’
+In file included from [01m[K/opt/ros/noetic/include/pluginlib/class_loader.hpp:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/costmap_2d/costmap_2d_ros.h:50[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/class_loader/multi_library_class_loader.hpp:56:27:[m[K [01;36m[Knote: [m[K‘[01m[Kclass_loader::MultiLibraryClassLoader::MultiLibraryClassLoader(const class_loader::MultiLibraryClassLoader&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   56 | class CLASS_LOADER_PUBLIC [01;36m[KMultiLibraryClassLoader[m[K
+      |                           [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/class_loader/multi_library_class_loader.hpp:56:27:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kboost::mutex::mutex(const boost::mutex&)[m[K’
+In file included from [01m[K/usr/include/boost/thread/detail/move.hpp:24[m[K,
+                 from [01m[K/usr/include/boost/thread/lock_types.hpp:11[m[K,
+                 from [01m[K/usr/include/boost/thread/pthread/mutex.hpp:16[m[K,
+                 from [01m[K/usr/include/boost/thread/mutex.hpp:16[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/time_cache.h:36[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/tf.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/transform_listener.h:38[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:1[m[K:
+[01m[K/usr/include/boost/thread/pthread/mutex.hpp:44:9:[m[K [01;36m[Knote: [m[Kdeclared here
+   44 |         [01;36m[KBOOST_THREAD_NO_COPYABLE[m[K(mutex)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/costmap_2d/costmap_2d_ros.h:74:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kboost::recursive_mutex::recursive_mutex(const boost::recursive_mutex&)[m[K’
+   74 | class [01;31m[KCostmap2DROS[m[K
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/thread/detail/move.hpp:24[m[K,
+                 from [01m[K/usr/include/boost/thread/lock_types.hpp:11[m[K,
+                 from [01m[K/usr/include/boost/thread/pthread/mutex.hpp:16[m[K,
+                 from [01m[K/usr/include/boost/thread/mutex.hpp:16[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/time_cache.h:36[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/tf.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/transform_listener.h:38[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:1[m[K:
+[01m[K/usr/include/boost/thread/pthread/recursive_mutex.hpp:56:9:[m[K [01;36m[Knote: [m[Kdeclared here
+   56 |         [01;36m[KBOOST_THREAD_NO_COPYABLE[m[K(recursive_mutex)
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/traj_controller_node.dir/build.make:63: CMakeFiles/traj_controller_node.dir/src/controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:220: CMakeFiles/traj_controller_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

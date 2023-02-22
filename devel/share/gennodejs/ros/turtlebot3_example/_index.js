@@ -1,6 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-};
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_example/share/gennodejs/ros/turtlebot3_example/_index.js

@@ -28,7 +28,7 @@ find_package(catkin REQUIRED COMPONENTS
 # Declare catkin specific configuration to be passed to dependent projects
 ################################################################################
 catkin_package(
-  CATKIN_DEPENDS urdf xacro gazebo_ros 
+  CATKIN_DEPENDS urdf xacro
 )
 
 ################################################################################
@@ -41,7 +41,7 @@ include_directories(
 ################################################################################
 # Install
 ################################################################################
-install(DIRECTORY meshes rviz urdf media
+install(DIRECTORY meshes rviz urdf
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 

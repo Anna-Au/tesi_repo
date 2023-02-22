@@ -1,0 +1,5 @@
+[  8%] Built target aruco_ros_gencfg
+[ 25%] Built target aruco_ros_utils
+[ 50%] Built target marker_publisher
+[ 75%] Built target double
+[100%] Built target single

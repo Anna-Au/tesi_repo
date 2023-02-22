@@ -1,0 +1,16 @@
+aruco_ros/aruco_ros
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/cmake.lock /home/rosario/Desktop/tesi/tesi_repo/devel/./cmake.lock
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc /home/rosario/Desktop/tesi/tesi_repo/devel/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/share/aruco_ros/docs/ArucoThresholdConfig.dox /home/rosario/Desktop/tesi/tesi_repo/devel/share/aruco_ros/docs/ArucoThresholdConfig.dox
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox /home/rosario/Desktop/tesi/tesi_repo/devel/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/share/aruco_ros/cmake/aruco_rosConfig-version.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/aruco_ros/cmake/aruco_rosConfig-version.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/share/aruco_ros/cmake/aruco_rosConfig.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/aruco_ros/cmake/aruco_rosConfig.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/include/aruco_ros/ArucoThresholdConfig.h /home/rosario/Desktop/tesi/tesi_repo/devel/include/aruco_ros/ArucoThresholdConfig.h
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/lib/libaruco_ros_utils.so /home/rosario/Desktop/tesi/tesi_repo/devel/lib/libaruco_ros_utils.so
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/lib/pkgconfig/aruco_ros.pc /home/rosario/Desktop/tesi/tesi_repo/devel/lib/pkgconfig/aruco_ros.pc
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/lib/aruco_ros/marker_publisher /home/rosario/Desktop/tesi/tesi_repo/devel/lib/aruco_ros/marker_publisher
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/lib/aruco_ros/single /home/rosario/Desktop/tesi/tesi_repo/devel/lib/aruco_ros/single
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/lib/aruco_ros/double /home/rosario/Desktop/tesi/tesi_repo/devel/lib/aruco_ros/double
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/lib/python3/dist-packages/aruco_ros/__init__.py /home/rosario/Desktop/tesi/tesi_repo/devel/lib/python3/dist-packages/aruco_ros/__init__.py
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/lib/python3/dist-packages/aruco_ros/cfg/__init__.py /home/rosario/Desktop/tesi/tesi_repo/devel/lib/python3/dist-packages/aruco_ros/cfg/__init__.py
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_ros/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py /home/rosario/Desktop/tesi/tesi_repo/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py

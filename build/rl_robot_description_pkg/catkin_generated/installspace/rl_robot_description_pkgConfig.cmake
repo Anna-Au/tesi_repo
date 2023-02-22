@@ -67,14 +67,14 @@ set(rl_robot_description_pkg_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rl_robot_description_pkg_SOURCE_PREFIX /home/anna_au/tesi_ws/src/rl_robot_description_pkg)
-  set(rl_robot_description_pkg_DEVEL_PREFIX /home/anna_au/tesi_ws/devel)
+  set(rl_robot_description_pkg_SOURCE_PREFIX /home/rosario/Desktop/tesi/tesi_repo/src/rl_robot_description_pkg)
+  set(rl_robot_description_pkg_DEVEL_PREFIX /home/rosario/Desktop/tesi/tesi_repo/devel/.private/rl_robot_description_pkg)
   set(rl_robot_description_pkg_INSTALL_PREFIX "")
   set(rl_robot_description_pkg_PREFIX ${rl_robot_description_pkg_DEVEL_PREFIX})
 else()
   set(rl_robot_description_pkg_SOURCE_PREFIX "")
   set(rl_robot_description_pkg_DEVEL_PREFIX "")
-  set(rl_robot_description_pkg_INSTALL_PREFIX /home/anna_au/tesi_ws/install)
+  set(rl_robot_description_pkg_INSTALL_PREFIX /home/rosario/Desktop/tesi/tesi_repo/install)
   set(rl_robot_description_pkg_PREFIX ${rl_robot_description_pkg_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/anna_au/tesi_ws/install/lib;/home/anna_au/tesi_ws/devel/lib;/home/anna_au/Scrivania/project_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/rosario/Desktop/tesi/tesi_repo/install/lib;/home/rosario/Desktop/tesi/tesi_repo/devel/lib;/home/rosario/RL-Project-master/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

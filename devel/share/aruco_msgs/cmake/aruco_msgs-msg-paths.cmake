@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(aruco_msgs_MSG_INCLUDE_DIRS "/home/anna_au/tesi_ws/src/aruco_ros/aruco_msgs/msg")
-set(aruco_msgs_MSG_DEPENDENCIES std_msgs;geometry_msgs)
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_msgs/share/aruco_msgs/cmake/aruco_msgs-msg-paths.cmake

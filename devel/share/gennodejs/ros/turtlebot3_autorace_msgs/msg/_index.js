@@ -1,8 +1,1 @@
-
-"use strict";
-
-let MovingParam = require('./MovingParam.js');
-
-module.exports = {
-  MovingParam: MovingParam,
-};
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_msgs/share/gennodejs/ros/turtlebot3_autorace_msgs/msg/_index.js

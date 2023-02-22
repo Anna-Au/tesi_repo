@@ -1,6 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-};
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_msgs/share/gennodejs/ros/aruco_msgs/_index.js

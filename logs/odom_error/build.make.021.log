@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target odom_error_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odom_error_node.dir/src/odom_error.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/rosario/Desktop/tesi/tesi_repo/devel/.private/odom_error/lib/odom_error/odom_error_node[0m
+[100%] Built target odom_error_node

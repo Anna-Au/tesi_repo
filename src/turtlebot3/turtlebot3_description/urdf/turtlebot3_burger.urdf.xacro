@@ -1,7 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="turtlebot3_burger" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="$(find turtlebot3_description)/urdf/common_properties.xacro"/>
-  <xacro:arg name="laser_visual" default="false"/>
   <xacro:include filename="$(find turtlebot3_description)/urdf/turtlebot3_burger.gazebo.xacro"/>
 
   <link name="base_footprint"/>
@@ -162,42 +161,5 @@
                izz="0.001" />
     </inertial>
   </link>
-  
-  <joint name="camera_joint" type="fixed">
-    <origin xyz="0.035 0 0.135" rpy="0 0 0"/>
-    <parent link="base_link"/>
-    <child link="camera_link"/>
-  </joint>
-
-  <link name="camera_link">
-  	<visual>
-           <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-           <geometry>
-               <box size="0.005 0.01 0.005"/>
-           </geometry>
-           <material name="blue"/>
-           </visual>
-  	
-    <collision>
-      <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-      <geometry>
-        <box size="0.005 0.005 0.005"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="camera_rgb_joint" type="fixed">
-    <origin xyz="0.0 0.0 0.0" rpy="0 -0.15 0"/>
-    <parent link="camera_link"/>
-    <child link="camera_rgb_frame"/>
-  </joint>
-  <link name="camera_rgb_frame"/>
-  
-  <joint name="camera_rgb_optical_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="-1.57 0 -1.57"/>
-    <parent link="camera_rgb_frame"/>
-    <child link="camera_rgb_optical_frame"/>
-  </joint>
-  <link name="camera_rgb_optical_frame"/>
 
 </robot>

@@ -1,8 +1,1 @@
-(cl:in-package turtlebot3_example-msg)
-(cl:export '(HEADER-VAL
-          HEADER
-          STATUS-VAL
-          STATUS
-          RESULT-VAL
-          RESULT
-))
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_example/share/common-lisp/ros/turtlebot3_example/msg/_package_Turtlebot3ActionResult.lisp

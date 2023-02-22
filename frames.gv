@@ -1,0 +1,15 @@
+digraph G {
+"base_link" -> "camera_link"[label="Broadcaster: /base_link2camera\nAverage rate: 10.295 Hz\nMost recent transform: 2084.917 ( -0.037 sec old)\nBuffer length: 2.914 sec\n"];
+"base_footprint" -> "base_link"[label="Broadcaster: /base_foot2base_link\nAverage rate: 10.292 Hz\nMost recent transform: 2084.954 ( -0.074 sec old)\nBuffer length: 2.915 sec\n"];
+"odom" -> "base_footprint"[label="Broadcaster: /gazebo\nAverage rate: 30.344 Hz\nMost recent transform: 2084.858 ( 0.022 sec old)\nBuffer length: 2.933 sec\n"];
+"map" -> "odom"[label="Broadcaster: /slam_gmapping\nAverage rate: 20.345 Hz\nMost recent transform: 2084.885 ( -0.005 sec old)\nBuffer length: 2.900 sec\n"];
+"base_footprint" -> "wheel_right_link"[label="Broadcaster: /gazebo\nAverage rate: 30.355 Hz\nMost recent transform: 2084.858 ( 0.022 sec old)\nBuffer length: 2.932 sec\n"];
+"base_footprint" -> "wheel_left_link"[label="Broadcaster: /gazebo\nAverage rate: 30.355 Hz\nMost recent transform: 2084.858 ( 0.022 sec old)\nBuffer length: 2.932 sec\n"];
+"camera_link" -> "camera_rgb_frame"[label="Broadcaster: /camera_link2camera_frame\nAverage rate: 10.288 Hz\nMost recent transform: 2084.950 ( -0.070 sec old)\nBuffer length: 2.916 sec\n"];
+"camera_rgb_frame" -> "camera_rgb_optical_frame"[label="Broadcaster: /camera_frame2camera_rgb\nAverage rate: 10.309 Hz\nMost recent transform: 2084.956 ( -0.076 sec old)\nBuffer length: 2.910 sec\n"];
+"base_link" -> "base_scan"[label="Broadcaster: /base_link2scan\nAverage rate: 10.313 Hz\nMost recent transform: 2084.979 ( -0.099 sec old)\nBuffer length: 2.909 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 2084.880"[ shape=plaintext ] ;
+ }->"map";
+}

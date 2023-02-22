@@ -1,8 +1,1 @@
-prefix=/home/anna_au/tesi_ws/devel
-
-Name: turtlebot3_description
-Description: Description of turtlebot3_description
-Version: 1.2.6
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: urdf xacro gazebo_ros
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc

@@ -8,10 +8,10 @@
         <geometry>
             <mesh>
               <uri>
-                model://race/mesh/percorso.stl
+                model://race/mesh/red_scene.stl
               </uri>
               <scale>
-                1 1 1
+                0.5 0.5 1
               </scale>
             </mesh>
         </geometry>
@@ -21,10 +21,10 @@
         <geometry>
             <mesh>
               <uri>
-                model://race/mesh/percorso.stl
+                model://race/mesh/red_scene.stl
               </uri>
               <scale>
-                1 1 1
+                0.5 0.5 1
               </scale>
             </mesh>
         </geometry>

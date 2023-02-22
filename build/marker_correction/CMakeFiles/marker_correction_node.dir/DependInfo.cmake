@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anna_au/tesi_ws/src/marker_correction/src/marker_correction.cpp" "/home/anna_au/tesi_ws/build/marker_correction/CMakeFiles/marker_correction_node.dir/src/marker_correction.cpp.o"
+  "/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_correction.cpp" "/home/rosario/Desktop/tesi/tesi_repo/build/marker_correction/CMakeFiles/marker_correction_node.dir/src/marker_correction.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/anna_au/tesi_ws/devel/include"
+  "/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_msgs/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

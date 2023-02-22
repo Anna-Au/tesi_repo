@@ -1,0 +1,11 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:29:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid costmap_2d::Costmap2DROS::loadOldParameters(ros::NodeHandle&)[m[K’ is private within this context
+   29 |  costmap.loadOldParameters(n[01;31m[K)[m[K;
+      |                             [01;31m[K^[m[K
+In file included from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/costmap_2d/costmap_2d_ros.h:254:8:[m[K [01;36m[Knote: [m[Kdeclared private here
+  254 |   void [01;36m[KloadOldParameters[m[K(ros::NodeHandle& nh);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/traj_controller_node.dir/build.make:63: CMakeFiles/traj_controller_node.dir/src/controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:220: CMakeFiles/traj_controller_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,10 +1,1 @@
-(cl:in-package aruco_msgs-msg)
-(cl:export '(HEADER-VAL
-          HEADER
-          ID-VAL
-          ID
-          POSE-VAL
-          POSE
-          CONFIDENCE-VAL
-          CONFIDENCE
-))
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_msgs/share/common-lisp/ros/aruco_msgs/msg/_package_Marker.lisp

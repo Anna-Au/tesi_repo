@@ -1,0 +1,8 @@
+prefix=/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/build/devel
+
+Name: marker_correction
+Description: Description of marker_correction
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lmarker_correction
+Requires: aruco_msgs geometry_msgs roscpp sensor_msgs tf

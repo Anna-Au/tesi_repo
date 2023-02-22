@@ -1,0 +1,7 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_correction.cpp:[m[K In function ‘[01m[Kvoid map_callback(const ConstPtr&)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_correction.cpp:60:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass __gnu_cxx::__normal_iterator<obs_marker*, std::vector<obs_marker> >[m[K’ has no member named ‘[01m[Kid[m[K’
+   60 |    if (marker_pos.distance((*it2).pos)<min_distance && marker.id == (*it2.[01;31m[Kid[m[K)){
+      |                                                                           [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/marker_correction_node.dir/build.make:63: CMakeFiles/marker_correction_node.dir/src/marker_correction.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1704: CMakeFiles/marker_correction_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

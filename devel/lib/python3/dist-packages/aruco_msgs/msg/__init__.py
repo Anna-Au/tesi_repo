@@ -1,2 +1,1 @@
-from ._Marker import *
-from ._MarkerArray import *
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_msgs/lib/python3/dist-packages/aruco_msgs/msg/__init__.py

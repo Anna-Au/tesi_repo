@@ -1,8 +1,1 @@
-prefix=/home/anna_au/tesi_ws/devel
-
-Name: marker_correction
-Description: Description of marker_correction
-Version: 0.0.0
-Cflags: -I/home/anna_au/tesi_ws/src/marker_correction/include
-Libs: -L${prefix}/lib -lmarker_correction
-Requires: aruco_msgs geometry_msgs roscpp sensor_msgs tf
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/marker_correction/lib/pkgconfig/marker_correction.pc

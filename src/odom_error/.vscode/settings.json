@@ -1,0 +1,7 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/rosario/Desktop/tesi/tesi_repo/devel/lib/python3/dist-packages",
+        "/home/rosario/RL-Project-master/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

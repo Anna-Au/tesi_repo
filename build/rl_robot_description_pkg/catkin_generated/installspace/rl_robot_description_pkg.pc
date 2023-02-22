@@ -1,4 +1,4 @@
-prefix=/home/anna_au/tesi_ws/install
+prefix=/home/rosario/Desktop/tesi/tesi_repo/install
 
 Name: rl_robot_description_pkg
 Description: Description of rl_robot_description_pkg

@@ -1,0 +1,78 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:[m[K In function ‘[01m[Kvoid computeB_des_traj(nav_msgs::Path_<std::allocator<void> >::ConstPtr&)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:21:73:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs::Path_<std::allocator<void> >::ConstPtr[m[K’ {aka ‘[01m[Kclass boost::shared_ptr<const nav_msgs::Path_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kposes[m[K’
+   21 |  for (std::vector<geometry_msgs::PoseStamped>::const_iterator it = path.[01;31m[Kposes[m[K.begin(); it != path.poses.end(); ++it)
+      |                                                                         [01;31m[K^~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:21:99:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs::Path_<std::allocator<void> >::ConstPtr[m[K’ {aka ‘[01m[Kclass boost::shared_ptr<const nav_msgs::Path_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kposes[m[K’
+   21 |  for (std::vector<geometry_msgs::PoseStamped>::const_iterator it = path.poses.begin(); it != path.[01;31m[Kposes[m[K.end(); ++it)
+      |                                                                                                   [01;31m[K^~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:24:4:[m[K [01;31m[Kerror: [m[K‘[01m[KB_traj[m[K’ was not declared in this scope; did you mean ‘[01m[KB_des_traj[m[K’?
+   24 |    [01;31m[KB_traj[m[K.push_back(P);
+      |    [01;31m[K^~~~~~[m[K
+      |    [32m[KB_des_traj[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:[m[K At global scope:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeoemtry_msgs[m[K’ has not been declared
+   28 | geometry_msgs::Twist computeVel([01;31m[Kgeoemtry_msgs[m[K::Point::ConstPtr& B, geoemtry_msgs::Point::ConstPtr& B_des,geoemtry_msgs::Point::ConstPtr& B_des_old){
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:65:[m[K [01;31m[Kerror: [m[K‘[01m[KB[m[K’ was not declared in this scope
+   28 | geometry_msgs::Twist computeVel(geoemtry_msgs::Point::ConstPtr& [01;31m[KB[m[K, geoemtry_msgs::Point::ConstPtr& B_des,geoemtry_msgs::Point::ConstPtr& B_des_old){
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeoemtry_msgs[m[K’ has not been declared
+   28 | geometry_msgs::Twist computeVel(geoemtry_msgs::Point::ConstPtr& B, [01;31m[Kgeoemtry_msgs[m[K::Point::ConstPtr& B_des,geoemtry_msgs::Point::ConstPtr& B_des_old){
+      |                                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:100:[m[K [01;31m[Kerror: [m[K‘[01m[KB_des[m[K’ was not declared in this scope
+   28 | geometry_msgs::Twist computeVel(geoemtry_msgs::Point::ConstPtr& B, geoemtry_msgs::Point::ConstPtr& [01;31m[KB_des[m[K,geoemtry_msgs::Point::ConstPtr& B_des_old){
+      |                                                                                                    [01;31m[K^~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:106:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeoemtry_msgs[m[K’ has not been declared
+   28 | geometry_msgs::Twist computeVel(geoemtry_msgs::Point::ConstPtr& B, geoemtry_msgs::Point::ConstPtr& B_des,[01;31m[Kgeoemtry_msgs[m[K::Point::ConstPtr& B_des_old){
+      |                                                                                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:138:[m[K [01;31m[Kerror: [m[K‘[01m[KB_des_old[m[K’ was not declared in this scope
+   28 | geometry_msgs::Twist computeVel(geoemtry_msgs::Point::ConstPtr& B, geoemtry_msgs::Point::ConstPtr& B_des,geoemtry_msgs::Point::ConstPtr& [01;31m[KB_des_old[m[K){
+      |                                                                                                                                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:148:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+   28 | geometry_msgs::Twist computeVel(geoemtry_msgs::Point::ConstPtr& B, geoemtry_msgs::Point::ConstPtr& B_des,geoemtry_msgs::Point::ConstPtr& B_des_old)[01;31m[K{[m[K
+      |                                                                                                                                                    [01;31m[K^[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:64:2:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeB_des_trajectory[m[K’ was not declared in this scope; did you mean ‘[01m[KcomputeB_des_traj[m[K’?
+   64 |  [01;31m[KcomputeB_des_trajectory[m[K(gPlan);
+      |  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |  [32m[KcomputeB_des_traj[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:72:23:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kgeometry_msgs::Twist cmd_vel[m[K’
+   72 |  geometry_msgs::Twist [01;31m[Kcmd_vel[m[K;
+      |                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:59:23:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::Twist cmd_vel[m[K’ previously declared here
+   59 |  geometry_msgs::Twist [01;36m[Kcmd_vel[m[K;
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:73:7:[m[K [01;31m[Kerror: [m[K‘[01m[Krate[m[K’ is not a member of ‘[01m[Kros[m[K’; did you mean ‘[01m[KRate[m[K’?
+   73 |  ros::[01;31m[Krate[m[K r(0.001);
+      |       [01;31m[K^~~~[m[K
+      |       [32m[KRate[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:76:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeoemtry_msgs[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs[m[K’?
+   76 |   for (std::vector<[01;31m[Kgeoemtry_msgs[m[K::Point>::const_iterator it = B_des_traj.begin(); it != B_des_traj.end(); ++it){
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+      |                    [32m[Kgeometry_msgs[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:76:40:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |   for (std::vector<geoemtry_msgs::Point[01;31m[K>[m[K::const_iterator it = B_des_traj.begin(); it != B_des_traj.end(); ++it){
+      |                                        [01;31m[K^[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:76:40:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:76:58:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[Kit[m[K’
+   76 |   for (std::vector<geoemtry_msgs::Point>::const_iterator [01;31m[Kit[m[K = B_des_traj.begin(); it != B_des_traj.end(); ++it){
+      |                                                          [01;31m[K^~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:76:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kit[m[K’
+   76 |   for (std::vector<geoemtry_msgs::Point>::const_iterator[01;31m[K [m[K[32m[Kit[m[K = B_des_traj.begin(); it != B_des_traj.end(); ++it){
+      |                                                         [01;31m[K^[m[K[32m[K~~[m[K
+      |                                                         [32m[K;[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:76:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kit[m[K’ was not declared in this scope; did you mean ‘[01m[Kint[m[K’?
+   76 |   for (std::vector<geoemtry_msgs::Point>::const_iterator [01;31m[Kit[m[K = B_des_traj.begin(); it != B_des_traj.end(); ++it){
+      |                                                          [01;31m[K^~[m[K
+      |                                                          [32m[Kint[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:76:105:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   76 |   for [34m[K([m[Kstd::vector<geoemtry_msgs::Point>::const_iterator it = B_des_traj.begin(); it != B_des_traj.end()[01;31m[K;[m[K ++it){
+      |       [34m[K~[m[K                                                                                                 [01;31m[K^[m[K
+      |                                                                                                         [32m[K)[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:76:109:[m[K [01;31m[Kerror: [m[K‘[01m[Kit[m[K’ was not declared in this scope; did you mean ‘[01m[Kint[m[K’?
+   76 |   for (std::vector<geoemtry_msgs::Point>::const_iterator it = B_des_traj.begin(); it != B_des_traj.end(); ++[01;31m[Kit[m[K){
+      |                                                                                                             [01;31m[K^~[m[K
+      |                                                                                                             [32m[Kint[m[K
+make[2]: *** [CMakeFiles/traj_controller_node.dir/build.make:63: CMakeFiles/traj_controller_node.dir/src/controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:220: CMakeFiles/traj_controller_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

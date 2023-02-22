@@ -1,0 +1,10 @@
+traj_controller
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/cmake.lock /home/rosario/Desktop/tesi/tesi_repo/devel/./cmake.lock
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/share/roseus/ros/traj_controller/manifest.l /home/rosario/Desktop/tesi/tesi_repo/devel/share/roseus/ros/traj_controller/manifest.l
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/share/traj_controller/cmake/traj_controllerConfig.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/traj_controller/cmake/traj_controllerConfig.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/share/traj_controller/cmake/traj_controller-msg-paths.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/traj_controller/cmake/traj_controller-msg-paths.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/share/traj_controller/cmake/traj_controllerConfig-version.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/traj_controller/cmake/traj_controllerConfig-version.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/share/traj_controller/cmake/traj_controller-msg-extras.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/traj_controller/cmake/traj_controller-msg-extras.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/lib/pkgconfig/traj_controller.pc /home/rosario/Desktop/tesi/tesi_repo/devel/lib/pkgconfig/traj_controller.pc
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/lib/python3/dist-packages/traj_controller/__init__.py /home/rosario/Desktop/tesi/tesi_repo/devel/lib/python3/dist-packages/traj_controller/__init__.py
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/lib/traj_controller/traj_controller_node /home/rosario/Desktop/tesi/tesi_repo/devel/lib/traj_controller/traj_controller_node

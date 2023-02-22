@@ -1,10 +1,1 @@
-
-"use strict";
-
-let MarkerArray = require('./MarkerArray.js');
-let Marker = require('./Marker.js');
-
-module.exports = {
-  MarkerArray: MarkerArray,
-  Marker: Marker,
-};
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_msgs/share/gennodejs/ros/aruco_msgs/msg/_index.js

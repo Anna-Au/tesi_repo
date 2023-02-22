@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: odom_error
+Description: Description of odom_error
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

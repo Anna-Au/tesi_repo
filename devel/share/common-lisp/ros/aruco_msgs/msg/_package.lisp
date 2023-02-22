@@ -1,9 +1,1 @@
-(cl:defpackage aruco_msgs-msg
-  (:use )
-  (:export
-   "<MARKER>"
-   "MARKER"
-   "<MARKERARRAY>"
-   "MARKERARRAY"
-  ))
-
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_msgs/share/common-lisp/ros/aruco_msgs/msg/_package.lisp

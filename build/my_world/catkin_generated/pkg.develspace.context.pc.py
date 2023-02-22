@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "my_world"
-PROJECT_SPACE_DIR = "/home/anna_au/tesi_ws/devel"
+PROJECT_SPACE_DIR = "/home/rosario/Desktop/tesi/tesi_repo/devel/.private/my_world"
 PROJECT_VERSION = "0.0.0"

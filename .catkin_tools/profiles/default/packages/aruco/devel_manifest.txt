@@ -1,0 +1,6 @@
+aruco_ros/aruco
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco/cmake.lock /home/rosario/Desktop/tesi/tesi_repo/devel/./cmake.lock
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco/share/aruco/cmake/arucoConfig-version.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/aruco/cmake/arucoConfig-version.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco/share/aruco/cmake/arucoConfig.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/aruco/cmake/arucoConfig.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco/lib/libaruco.so /home/rosario/Desktop/tesi/tesi_repo/devel/lib/libaruco.so
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco/lib/pkgconfig/aruco.pc /home/rosario/Desktop/tesi/tesi_repo/devel/lib/pkgconfig/aruco.pc

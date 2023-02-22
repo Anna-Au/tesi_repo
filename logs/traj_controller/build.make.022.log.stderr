@@ -1,0 +1,31 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:65:20:[m[K [01;31m[Kerror: [m[Kinvalid initialization of non-const reference of type ‘[01m[Knav_msgs::Path_<std::allocator<void> >::ConstPtr&[m[K’ {aka ‘[01m[Kboost::shared_ptr<const nav_msgs::Path_<std::allocator<void> > >&[m[K’} from an rvalue of type ‘[01m[Knav_msgs::Path*[m[K’ {aka ‘[01m[Knav_msgs::Path_<std::allocator<void> >*[m[K’}
+   65 |  computeB_des_traj([01;31m[K&gPlan[m[K);
+      |                    [01;31m[K^~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:18:50:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kvoid computeB_des_traj(nav_msgs::Path_<std::allocator<void> >::ConstPtr&)[m[K’
+   18 | void computeB_des_traj([01;36m[Knav_msgs::Path::ConstPtr& path[m[K){
+      |                        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:89:23:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >::ConstPtr&[m[K’ {aka ‘[01m[Kboost::shared_ptr<const geometry_msgs::Point_<std::allocator<void> > >&[m[K’} from expression of type ‘[01m[Kgeometry_msgs::Point[m[K’ {aka ‘[01m[Kgeometry_msgs::Point_<std::allocator<void> >[m[K’}
+   89 |    cmd_vel=computeVel([01;31m[KB[m[K,B_des,B_des_old);
+      |                       [01;31m[K^[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:28:65:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kgeometry_msgs::Twist computeVel(geometry_msgs::Point_<std::allocator<void> >::ConstPtr&, geometry_msgs::Point_<std::allocator<void> >::ConstPtr&, geometry_msgs::Point_<std::allocator<void> >::ConstPtr&)[m[K’
+   28 | geometry_msgs::Twist computeVel([01;36m[Kgeometry_msgs::Point::ConstPtr& B[m[K, geometry_msgs::Point::ConstPtr& B_des,geometry_msgs::Point::ConstPtr& B_des_old){
+      |                                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:366[m[K,
+                 from [01m[K/opt/ros/noetic/include/base_local_planner/latched_stop_rotate_controller.h:13[m[K,
+                 from [01m[K/opt/ros/noetic/include/dwa_local_planner/dwa_planner_ros.h:54[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:3[m[K:
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h: In instantiation of ‘[01m[Kvoid Eigen::PlainObjectBase<Derived>::_init2(Eigen::Index, Eigen::Index, typename Eigen::internal::enable_if<(typename Eigen::internal::dense_xpr_base<Derived>::type::SizeAtCompileTime != 2), T0>::type*) [with T0 = float; T1 = float; Derived = Eigen::Matrix<double, -1, 1>; Eigen::Index = long int; typename Eigen::internal::enable_if<(typename Eigen::internal::dense_xpr_base<Derived>::type::SizeAtCompileTime != 2), T0>::type = float][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:302:35:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const T0&, const T1&) [with T0 = float; T1 = float; _Scalar = double; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1][m[K’
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:41:27:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:740:58:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: FLOATING_POINT_ARGUMENT_PASSED__INTEGER_WAS_EXPECTED
+  740 |       EIGEN_STATIC_ASSERT([01;31m[Kbool(NumTraits<T0>::IsInteger) &&[m[K
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+  741 | [01;31m[K                          bool(NumTraits<T1>::IsInteger)[m[K,
+      |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/traj_controller_node.dir/build.make:63: CMakeFiles/traj_controller_node.dir/src/controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:220: CMakeFiles/traj_controller_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

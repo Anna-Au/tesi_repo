@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/CMakeLists.txt:128:
+  Parse error.  Expected a command name, got right paren with text ")".
+
+
+make: *** [Makefile:1484: cmake_check_build_system] Error 1

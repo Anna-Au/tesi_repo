@@ -1,0 +1,5 @@
+my_turtlebot3_description
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/my_turtlebot3_description/cmake.lock /home/rosario/Desktop/tesi/tesi_repo/devel/./cmake.lock
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/my_turtlebot3_description/share/my_turtlebot3_description/cmake/my_turtlebot3_descriptionConfig-version.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/my_turtlebot3_description/cmake/my_turtlebot3_descriptionConfig-version.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/my_turtlebot3_description/share/my_turtlebot3_description/cmake/my_turtlebot3_descriptionConfig.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/my_turtlebot3_description/cmake/my_turtlebot3_descriptionConfig.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/my_turtlebot3_description/lib/pkgconfig/my_turtlebot3_description.pc /home/rosario/Desktop/tesi/tesi_repo/devel/lib/pkgconfig/my_turtlebot3_description.pc

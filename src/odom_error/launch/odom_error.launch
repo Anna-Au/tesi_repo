@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+
+<node name="odom_error" pkg="odom_error" type="odom_error_node" respawn="false" output="screen"/>
+	
+</launch>

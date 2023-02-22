@@ -1,2 +1,1 @@
-set(aruco_msgs_MESSAGE_FILES "/home/anna_au/tesi_ws/src/aruco_ros/aruco_msgs/msg/Marker.msg;/home/anna_au/tesi_ws/src/aruco_ros/aruco_msgs/msg/MarkerArray.msg")
-set(aruco_msgs_SERVICE_FILES "")
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/aruco_msgs/share/aruco_msgs/cmake/aruco_msgs-msg-extras.cmake

@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(turtlebot3_example_MSG_INCLUDE_DIRS "/home/anna_au/tesi_ws/devel/share/turtlebot3_example/msg")
-set(turtlebot3_example_MSG_DEPENDENCIES std_msgs;geometry_msgs;actionlib_msgs)
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_example/share/turtlebot3_example/cmake/turtlebot3_example-msg-paths.cmake

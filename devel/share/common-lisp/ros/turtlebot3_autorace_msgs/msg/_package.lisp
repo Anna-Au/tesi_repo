@@ -1,7 +1,1 @@
-(cl:defpackage turtlebot3_autorace_msgs-msg
-  (:use )
-  (:export
-   "<MOVINGPARAM>"
-   "MOVINGPARAM"
-  ))
-
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_msgs/share/common-lisp/ros/turtlebot3_autorace_msgs/msg/_package.lisp

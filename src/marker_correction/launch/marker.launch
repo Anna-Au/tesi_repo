@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+
+<node name="marker_correction" pkg="marker_correction" type="marker_correction_node" respawn="false" output="screen"/>
+	
+</launch>

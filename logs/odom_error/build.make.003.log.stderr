@@ -1,0 +1,17 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/odom_error/src/odom_error.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/odom_error/src/odom_error.cpp:44:31:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktf::Quaternion()[m[K’ to ‘[01m[Kconst tf::Quaternion&[m[K’
+   44 |   error_transform.setRotation([01;31m[Kq[m[K);
+      |                               [01;31m[K^[m[K
+      |                               [01;31m[K|[m[K
+      |                               [01;31m[Ktf::Quaternion()[m[K
+In file included from [01m[K/opt/ros/noetic/include/tf/transform_datatypes.h:41[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/time_cache.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/tf.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/transform_listener.h:38[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/odom_error/src/odom_error.cpp:4[m[K:
+[01m[K/opt/ros/noetic/include/tf/LinearMath/Transform.h:163:57:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid tf::Transform::setRotation(const tf::Quaternion&)[m[K’
+  163 |  TFSIMD_FORCE_INLINE void setRotation([01;36m[Kconst Quaternion& q[m[K)
+      |                                       [01;36m[K~~~~~~~~~~~~~~~~~~^[m[K
+make[2]: *** [CMakeFiles/odom_error_node.dir/build.make:63: CMakeFiles/odom_error_node.dir/src/odom_error.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:401: CMakeFiles/odom_error_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

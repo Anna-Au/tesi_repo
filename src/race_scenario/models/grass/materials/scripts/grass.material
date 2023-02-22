@@ -2,8 +2,7 @@ material grass/Diffuse {
     technique {
         pass {
             texture_unit {
-                texture grass.jpg
-                scale 0.25 0.25
+                texture grass.png
             }
         }
     }

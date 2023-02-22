@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/rosario/Desktop/tesi/tesi_repo/devel/include/**",
+        "/home/rosario/RL-Project-master/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/rosario/Desktop/tesi/tesi_repo/src/aruco_ros/aruco/include/**",
+        "/home/rosario/Desktop/tesi/tesi_repo/src/aruco_ros/aruco_ros/include/**",
+        "/home/rosario/Desktop/tesi/tesi_repo/src/tracking_pid/include/**",
+        "/home/rosario/Desktop/tesi/tesi_repo/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/rosario/Desktop/tesi/tesi_repo/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/rosario/Desktop/tesi/tesi_repo/src/turtlebot3/turtlebot3_slam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

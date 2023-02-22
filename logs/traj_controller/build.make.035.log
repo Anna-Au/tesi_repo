@@ -1,0 +1,3 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/traj_controller_node.dir/src/controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/rosario/Desktop/tesi/tesi_repo/devel/.private/traj_controller/lib/traj_controller/traj_controller_node[0m
+[100%] Built target traj_controller_node

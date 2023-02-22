@@ -1,8 +1,1 @@
-prefix=/home/anna_au/tesi_ws/devel
-
-Name: race_scenario
-Description: Description of race_scenario
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/race_scenario/lib/pkgconfig/race_scenario.pc

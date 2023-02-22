@@ -1,4 +1,1 @@
-(cl:in-package turtlebot3_example-msg)
-(cl:export '(RESULT-VAL
-          RESULT
-))
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_example/share/common-lisp/ros/turtlebot3_example/msg/_package_Turtlebot3Result.lisp

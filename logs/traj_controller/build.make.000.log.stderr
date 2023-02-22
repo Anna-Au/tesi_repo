@@ -1,0 +1,69 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:8:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav_msgs[m[K’ does not name a type; did you mean ‘[01m[Kmap_msgs[m[K’?
+    8 | [01;31m[Kmav_msgs[m[K::Path gPlan;
+      | [01;31m[K^~~~~~~~[m[K
+      | [32m[Kmap_msgs[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:[m[K In function ‘[01m[Kvoid pathCb(const ConstPtr&)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:11:2:[m[K [01;31m[Kerror: [m[K‘[01m[KgPlan[m[K’ was not declared in this scope
+   11 |  [01;31m[KgPlan[m[K = nav_msgs::Path(path);
+      |  [01;31m[K^~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:11:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav_msgs::Path_<std::allocator<void> >::Path_(const ConstPtr&)[m[K’
+   11 |  gPlan = nav_msgs::Path(path[01;31m[K)[m[K;
+      |                             [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/dwa_local_planner/dwa_planner.h:63[m[K,
+                 from [01m[K/opt/ros/noetic/include/dwa_local_planner/dwa_planner_ros.h:58[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:3[m[K:
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:32:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav_msgs::Path_<ContainerAllocator>::Path_(const ContainerAllocator&) [with ContainerAllocator = std::allocator<void>][m[K’
+   32 |   [01;36m[KPath_[m[K(const ContainerAllocator& _alloc)
+      |   [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:32:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst ConstPtr[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const nav_msgs::Path_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::allocator<void>&[m[K’
+   32 |   Path_([01;36m[Kconst ContainerAllocator& _alloc[m[K)
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:28:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav_msgs::Path_<ContainerAllocator>::Path_() [with ContainerAllocator = std::allocator<void>][m[K’
+   28 |   [01;36m[KPath_[m[K()
+      |   [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:28:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav_msgs::Path_<std::allocator<void> >::Path_(const nav_msgs::Path_<std::allocator<void> >&)[m[K’
+   24 | struct [01;36m[KPath_[m[K
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst ConstPtr[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const nav_msgs::Path_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst nav_msgs::Path_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Knav_msgs::Path_<std::allocator<void> >::Path_(nav_msgs::Path_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/noetic/include/nav_msgs/Path.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst ConstPtr[m[K’ {aka ‘[01m[Kconst boost::shared_ptr<const nav_msgs::Path_<std::allocator<void> > >[m[K’} to ‘[01m[Knav_msgs::Path_<std::allocator<void> >&&[m[K’
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:17:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ is not a member of ‘[01m[Kros[m[K’; did you mean ‘[01m[KPublisher[m[K’?
+   17 |  ros::[01;31m[Kpublisher[m[K vel_pub = n.advertise<geometry_msgs::Twist>("cmd_vel",10);
+      |       [01;31m[K^~~~~~~~~[m[K
+      |       [32m[KPublisher[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:18:17:[m[K [01;31m[Kerror: [m[K‘[01m[KTwts[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’
+   18 |  geometry_msgs::[01;31m[KTwts[m[K cmd_vel;
+      |                 [01;31m[K^~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:24:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcostmap_2d::Costmap2DROS::Costmap2DROS(const char [11], tf::TransformListener&)[m[K’
+   24 |  costmap_2d::Costmap2DROS costmap("my_costmap", tf[01;31m[K)[m[K;
+      |                                                   [01;31m[K^[m[K
+In file included from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:2[m[K:
+[01m[K/opt/ros/noetic/include/costmap_2d/costmap_2d_ros.h:82:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcostmap_2d::Costmap2DROS::Costmap2DROS(const string&, tf2_ros::Buffer&)[m[K’
+   82 |   [01;36m[KCostmap2DROS[m[K(const std::string &name, tf2_ros::Buffer& tf);
+      |   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/costmap_2d/costmap_2d_ros.h:82:58:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Ktf::TransformListener[m[K’ to ‘[01m[Ktf2_ros::Buffer&[m[K’
+   82 |   Costmap2DROS(const std::string &name, [01;36m[Ktf2_ros::Buffer& tf[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:27:34:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktf::TransformListener*[m[K’ to ‘[01m[Ktf2_ros::Buffer*[m[K’
+   27 |  dp.initialize("my_dwa_planner", [01;31m[K&tf[m[K, &costmap);
+      |                                  [01;31m[K^~~[m[K
+      |                                  [01;31m[K|[m[K
+      |                                  [01;31m[Ktf::TransformListener*[m[K
+In file included from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:3[m[K:
+[01m[K/opt/ros/noetic/include/dwa_local_planner/dwa_planner_ros.h:79:58:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvirtual void dwa_local_planner::DWAPlannerROS::initialize(std::string, tf2_ros::Buffer*, costmap_2d::Costmap2DROS*)[m[K’
+   79 |       void initialize(std::string name, [01;36m[Ktf2_ros::Buffer* tf[m[K,
+      |                                         [01;36m[K~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[KgPlan[m[K’ was not declared in this scope
+   29 |  dp.setPlan([01;31m[KgPlan[m[K);
+      |             [01;31m[K^~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:32:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel[m[K’ was not declared in this scope
+   32 |   dp.computeVelocityCommands([01;31m[Kcmd_vel[m[K);
+      |                              [01;31m[K^~~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/traj_controller/src/controller.cpp:33:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_pub[m[K’ was not declared in this scope
+   33 |   [01;31m[Kvel_pub[m[K.pusblish(cmd_vel);
+      |   [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/traj_controller_node.dir/build.make:63: CMakeFiles/traj_controller_node.dir/src/controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:232: CMakeFiles/traj_controller_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

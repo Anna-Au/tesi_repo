@@ -1,6 +1,1 @@
-\subsubsection parameters ROS parameters
-
-Reads and maintains the following parameters on the ROS server
-
-- \b "~clip_hist_percent" : \b [double] Percentage of Histogram Cut-Off min: 0.0, default: 1.0, max: 10.0
-
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_camera/share/turtlebot3_autorace_camera/docs/ImageCompensationParamsConfig.dox

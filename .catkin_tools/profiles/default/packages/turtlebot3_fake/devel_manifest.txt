@@ -1,0 +1,6 @@
+turtlebot3_simulations/turtlebot3_fake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_fake/cmake.lock /home/rosario/Desktop/tesi/tesi_repo/devel/./cmake.lock
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_fake/share/turtlebot3_fake/cmake/turtlebot3_fakeConfig-version.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/turtlebot3_fake/cmake/turtlebot3_fakeConfig-version.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_fake/share/turtlebot3_fake/cmake/turtlebot3_fakeConfig.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/turtlebot3_fake/cmake/turtlebot3_fakeConfig.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_fake/lib/pkgconfig/turtlebot3_fake.pc /home/rosario/Desktop/tesi/tesi_repo/devel/lib/pkgconfig/turtlebot3_fake.pc
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_fake/lib/turtlebot3_fake/turtlebot3_fake_node /home/rosario/Desktop/tesi/tesi_repo/devel/lib/turtlebot3_fake/turtlebot3_fake_node

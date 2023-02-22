@@ -1,8 +1,1 @@
-prefix=/home/anna_au/tesi_ws/devel
-
-Name: my_world
-Description: Description of my_world
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/my_world/lib/pkgconfig/my_world.pc

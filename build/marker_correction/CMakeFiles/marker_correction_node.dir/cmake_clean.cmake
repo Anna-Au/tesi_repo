@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/anna_au/tesi_ws/devel/lib/marker_correction/marker_correction_node"
-  "/home/anna_au/tesi_ws/devel/lib/marker_correction/marker_correction_node.pdb"
+  "/home/rosario/Desktop/tesi/tesi_repo/devel/.private/marker_correction/lib/marker_correction/marker_correction_node"
+  "/home/rosario/Desktop/tesi/tesi_repo/devel/.private/marker_correction/lib/marker_correction/marker_correction_node.pdb"
   "CMakeFiles/marker_correction_node.dir/src/marker_correction.cpp.o"
 )
 

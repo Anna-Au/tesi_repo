@@ -1,2 +1,1 @@
-set(turtlebot3_autorace_msgs_MESSAGE_FILES "/home/anna_au/tesi_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_msgs/msg/MovingParam.msg")
-set(turtlebot3_autorace_msgs_SERVICE_FILES "")
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_msgs/share/turtlebot3_autorace_msgs/cmake/turtlebot3_autorace_msgs-msg-extras.cmake

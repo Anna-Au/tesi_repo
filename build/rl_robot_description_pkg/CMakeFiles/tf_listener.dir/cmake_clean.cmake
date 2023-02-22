@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/anna_au/tesi_ws/devel/lib/rl_robot_description_pkg/tf_listener"
-  "/home/anna_au/tesi_ws/devel/lib/rl_robot_description_pkg/tf_listener.pdb"
+  "/home/rosario/Desktop/tesi/tesi_repo/devel/.private/rl_robot_description_pkg/lib/rl_robot_description_pkg/tf_listener"
+  "/home/rosario/Desktop/tesi/tesi_repo/devel/.private/rl_robot_description_pkg/lib/rl_robot_description_pkg/tf_listener.pdb"
   "CMakeFiles/tf_listener.dir/src/tf_listener.cpp.o"
 )
 

@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(turtlebot3_autorace_msgs_MSG_INCLUDE_DIRS "/home/anna_au/tesi_ws/src/turtlebot3_autorace_2020/turtlebot3_autorace_msgs/msg")
-set(turtlebot3_autorace_msgs_MSG_DEPENDENCIES std_msgs)
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_msgs/share/turtlebot3_autorace_msgs/cmake/turtlebot3_autorace_msgs-msg-paths.cmake

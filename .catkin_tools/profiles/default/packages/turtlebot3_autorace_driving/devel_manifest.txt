@@ -1,0 +1,9 @@
+turtlebot3_autorace_2020/turtlebot3_autorace_driving
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_driving/cmake.lock /home/rosario/Desktop/tesi/tesi_repo/devel/./cmake.lock
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_driving/share/turtlebot3_autorace_driving/cmake/turtlebot3_autorace_drivingConfig-version.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/turtlebot3_autorace_driving/cmake/turtlebot3_autorace_drivingConfig-version.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_driving/share/turtlebot3_autorace_driving/cmake/turtlebot3_autorace_drivingConfig.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/turtlebot3_autorace_driving/cmake/turtlebot3_autorace_drivingConfig.cmake
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_driving/lib/turtlebot3_autorace_driving/control_moving /home/rosario/Desktop/tesi/tesi_repo/devel/lib/turtlebot3_autorace_driving/control_moving
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_driving/lib/turtlebot3_autorace_driving/control_lane /home/rosario/Desktop/tesi/tesi_repo/devel/lib/turtlebot3_autorace_driving/control_lane
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_driving/lib/turtlebot3_autorace_driving/cmake.lock /home/rosario/Desktop/tesi/tesi_repo/devel/lib/turtlebot3_autorace_driving/cmake.lock
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_driving/lib/pkgconfig/turtlebot3_autorace_driving.pc /home/rosario/Desktop/tesi/tesi_repo/devel/lib/pkgconfig/turtlebot3_autorace_driving.pc
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_autorace_driving/lib/python3/dist-packages/turtlebot3_autorace_driving/__init__.py /home/rosario/Desktop/tesi/tesi_repo/devel/lib/python3/dist-packages/turtlebot3_autorace_driving/__init__.py

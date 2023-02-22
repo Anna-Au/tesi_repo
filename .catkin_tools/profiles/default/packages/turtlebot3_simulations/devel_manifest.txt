@@ -1,0 +1,2 @@
+turtlebot3_simulations/turtlebot3_simulations
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/turtlebot3_simulations/cmake.lock /home/rosario/Desktop/tesi/tesi_repo/devel/./cmake.lock
