@@ -4,3 +4,4 @@ odom_error
 /home/rosario/Desktop/tesi/tesi_repo/devel/.private/odom_error/share/odom_error/cmake/odom_errorConfig-version.cmake /home/rosario/Desktop/tesi/tesi_repo/devel/share/odom_error/cmake/odom_errorConfig-version.cmake
 /home/rosario/Desktop/tesi/tesi_repo/devel/.private/odom_error/lib/pkgconfig/odom_error.pc /home/rosario/Desktop/tesi/tesi_repo/devel/lib/pkgconfig/odom_error.pc
 /home/rosario/Desktop/tesi/tesi_repo/devel/.private/odom_error/lib/odom_error/odom_error_node /home/rosario/Desktop/tesi/tesi_repo/devel/lib/odom_error/odom_error_node
+/home/rosario/Desktop/tesi/tesi_repo/devel/.private/odom_error/lib/odom_error/pose_publisher /home/rosario/Desktop/tesi/tesi_repo/devel/lib/odom_error/pose_publisher

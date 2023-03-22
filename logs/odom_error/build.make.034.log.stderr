@@ -1,0 +1,17 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/odom_error/src/slam_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/odom_error/src/slam_publisher.cpp:16:6:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformBroadcaster[m[K’ is not a member of ‘[01m[Ktf[m[K’; did you mean ‘[01m[KTransformFloatData[m[K’?
+   16 |  tf::[01;31m[KTransformBroadcaster[m[K br;
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |      [32m[KTransformFloatData[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/odom_error/src/slam_publisher.cpp:35:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::PointStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::PointStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kx[m[K’
+   35 |   msg.[01;31m[Kx[m[K=transform.getOrigin().getX();
+      |       [01;31m[K^[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/odom_error/src/slam_publisher.cpp:36:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::PointStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::PointStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ky[m[K’
+   36 |   msg.[01;31m[Ky[m[K=transform.getOrigin().getY();
+      |       [01;31m[K^[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/odom_error/src/slam_publisher.cpp:37:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::PointStamped[m[K’ {aka ‘[01m[Kstruct geometry_msgs::PointStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ky[m[K’
+   37 |   msg.[01;31m[Ky[m[K=transform.getOrigin().getY();
+      |       [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/pose_publisher.dir/build.make:63: CMakeFiles/pose_publisher.dir/src/slam_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:185: CMakeFiles/pose_publisher.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

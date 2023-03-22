@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target pose_publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pose_publisher.dir/src/slam_publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/rosario/Desktop/tesi/tesi_repo/devel/.private/odom_error/lib/odom_error/pose_publisher[0m
+[100%] Built target pose_publisher

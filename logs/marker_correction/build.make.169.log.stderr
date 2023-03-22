@@ -1,0 +1,39 @@
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:[m[K In function ‘[01m[Kvoid camera_callback(const ConstPtr&)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:55:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_pos[m[K’ was not declared in this scope; did you mean ‘[01m[Kmarker_msg[m[K’?
+   55 |     std::cout<<"Distance : " << [01;31m[Kmarker_pos[m[K.distance((*it2).pos) <<std::endl;
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+      |                                 [32m[Kmarker_msg[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_pub[m[K’ was not declared in this scope
+   97 |     [01;31m[Kpose_pub[m[K.publish(init_pose_msg);
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:108:59:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise(const char [17], int)[m[K’
+  108 |  ros::Publisher pose_sub=n.advertise("amcl/initialpose",10[01;31m[K)[m[K;
+      |                                                           [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:4[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)[m[K’
+  249 |     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+      |               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:108:59:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KM[m[K’
+  108 |  ros::Publisher pose_sub=n.advertise("amcl/initialpose",10[01;36m[K)[m[K;
+      |                                                           [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:4[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)[m[K’
+  315 |   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:108:59:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 2 provided
+  108 |  ros::Publisher pose_sub=n.advertise("amcl/initialpose",10[01;36m[K)[m[K;
+      |                                                           [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/rosario/Desktop/tesi/tesi_repo/src/marker_correction/src/marker_update.cpp:4[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:353:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::Publisher ros::NodeHandle::advertise(ros::AdvertiseOptions&)[m[K’
+  353 |   Publisher [01;36m[Kadvertise[m[K(AdvertiseOptions& ops);
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:353:13:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+make[2]: *** [CMakeFiles/marker_update.dir/build.make:63: CMakeFiles/marker_update.dir/src/marker_update.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1652: CMakeFiles/marker_update.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

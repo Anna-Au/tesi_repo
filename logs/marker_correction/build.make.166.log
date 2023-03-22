@@ -1,0 +1,5 @@
+[ 50%] Built target marker_correction_id_node
+[35m[1mScanning dependencies of target marker_correction_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/marker_correction_node.dir/src/marker_correction.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/rosario/Desktop/tesi/tesi_repo/devel/.private/marker_correction/lib/marker_correction/marker_correction_node[0m
+[100%] Built target marker_correction_node

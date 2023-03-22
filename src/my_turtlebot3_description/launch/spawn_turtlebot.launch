@@ -10,14 +10,14 @@
   <arg name="ref_frame" default="camera_link"/>
   <!-- Initial position of the robot -->
  <!--<arg name="x" default="-7"/>-->
-  <arg name="x" default="1.886"/>
+  <arg name="x" default="-0.389036"/>
  <!--<arg name="y" default="7"/>-->
- <arg name="y" default="1.082"/>
+ <arg name="y" default="1.360946"/>
   
-  <arg name="z" default="0.05"/>
-  <arg name="R" default="0"/>
-  <arg name="P" default="0"/>
-  <arg name="Y" default="-1.52"/>
+  <arg name="z" default="0.050000"/>
+  <arg name="R" default="-0.000020"/>
+  <arg name="P" default="0.007974"/>
+  <arg name="Y" default="0.094244"/>
   
   <arg name="las" default="false"/>
 
@@ -44,12 +44,14 @@
 	args="-urdf -model turtlebot_burger -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)"/> 
   <!--<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>-->
 	
- <node pkg="tf" type="static_transform_publisher" name="base_footprint2base_link" args="0.0 0.0 0.010 0 0 0 /base_footprint /base_link 100"/>
- <node pkg="tf" type="static_transform_publisher" name="base_link2scan" args="-0.032 0 0.172 0 0 0 /base_link /base_scan 100"/>
- <node pkg="tf" type="static_transform_publisher" name="base_foot2base_link" args="0 0 0.010 0 0 0 /base_footprint /base_link 100"/>
- <node pkg="tf" type="static_transform_publisher" name="base_link2camera" args="0.040 -0.011 0.130 0 0.174 0 /base_link /camera_link 100"/>
- <node pkg="tf" type="static_transform_publisher" name="camera_link2camera_frame" args="0.003 0.011 0.009 0 0 0 /camera_link /camera_rgb_frame 100"/>
- <node pkg="tf" type="static_transform_publisher" name="camera_frame2camera_rgb" args="0.0 0.0 0.0 -1.57 0 -1.57 /camera_rgb_frame /camera_rgb_optical_frame 100"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_footprint2base_link" args="0.0 0.0 0.010 0 0 0 /base_footprint /base_link 200"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_link2scan" args="-0.032 0 0.172 0 0 0 /base_link /base_scan 200"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_foot2base_link" args="0 0 0.010 0 0 0 /base_footprint /base_link 200"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_link2camera" args="0.040 -0.011 0.130 0 0.174 0 /base_link /camera_link 200"/>
+ <node pkg="tf" type="static_transform_publisher" name="camera_link2camera_frame" args="0.003 0.011 0.009 0 0 0 /camera_link /camera_rgb_frame 200"/>
+ <node pkg="tf" type="static_transform_publisher" name="camera_frame2camera_rgb" args="0.0 0.0 0.0 -1.57 0 -1.57 /camera_rgb_frame /camera_rgb_optical_frame 200"/>
+ 
+ <node pkg="odom_error" type="pose_publisher" name="base_pose"/>
 
  
  
@@ -67,6 +69,10 @@
   
   <!-- We resume the logic in marker_publisher.launch -->
   <include file="$(find aruco_ros)/launch/map_marker_publisher.launch">
+  </include>
+  
+  <!-- We resume the logic in marker_publisher.launch -->
+  <include file="$(find aruco_ros)/launch/marker_publisher.launch">
   </include>
   
   <!-- We resume the logic in marker_publisher_iiwa.launch 

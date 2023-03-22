@@ -4,7 +4,7 @@
     <arg name="side"             default="left"/>
     <arg name="ref_frame"       default="base_link"/>  <!-- leave empty and the pose will be published wrt param parent_name -->	
 
-    <node pkg="aruco_ros" type="marker_publisher" name="camera_marker">
+    <node pkg="aruco_ros" type="marker_publisher" name="base_marker">
         <remap from="/camera_info" to="/camera/camera_info" />
         <remap from="/image" to="/camera/image" />
         <param name="image_is_rectified" value="True"/>

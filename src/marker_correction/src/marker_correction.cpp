@@ -54,15 +54,17 @@ void map_callback(const aruco_msgs::MarkerArray::ConstPtr& marker_msg){
 		double min_distance = std::numeric_limits<double>::infinity();
 		std::vector<obs_marker>::iterator min_dist_it;
 		
-		//search the element in the table that minimizes the distance
+		//search the element in the table with same id that minimizes the distance
 		for(auto it2 = marker_table.begin(); it2 != marker_table.end(); ++it2){
-			std::cout<<"Distance : " << marker_pos.distance((*it2).pos) <<std::endl;
-			if (marker_pos.distance((*it2).pos)<min_distance && marker.id == (*it2).id){
-			//check if the marker is already present, otherwise add it to the table 
-				
-				min_distance=marker_pos.distance((*it2).pos);
-				min_dist_it=it2;
-			} 
+			if(marker.id == (*it2).id){
+				std::cout<<"Distance : " << marker_pos.distance((*it2).pos) <<std::endl;
+				if (marker_pos.distance((*it2).pos)<min_distance ){
+				//check if the marker is already present, otherwise add it to the table 
+					
+					min_distance=marker_pos.distance((*it2).pos);
+					min_dist_it=it2;
+				} 
+			}
 		}
 	
 	
@@ -172,8 +174,8 @@ int main (int argc, char** argv){
 	ros::AsyncSpinner spinner(2);
 	spinner.start();
 	//ros::waitForShutdown();
+	ros::Rate r(5);
 	
-	ros::Rate r(1);
 	
 	while(ros::ok()){
 		ROS_INFO("Main executing");
@@ -188,8 +190,9 @@ int main (int argc, char** argv){
 			std::cout<<"Publishing transform from: /map to: "<< str << std::endl;
 			}
 		m_table_mutex.unlock();
-		
 		r.sleep();
+		
+		
 		
 		}	
 	
